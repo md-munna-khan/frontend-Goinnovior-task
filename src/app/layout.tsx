@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MUNNA DEV",
+  title: "Goinnovior",
   description:
-    "I'm Munna, a passionate Full-Stack Developer skilled in JavaScript, React.js, Node.js, and MongoDB. Explore my projects, skills, and professional journey through this portfolio.",
+    "goinnovior task frontend application built with Next.js and Tailwind CSS",
   icons: {
     icon: "/logo.png", 
   },

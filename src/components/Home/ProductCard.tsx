@@ -15,20 +15,20 @@ const ProductCard: React.FC<ProductCardProps> = ({
   imageSrc,
 }) => {
   return (
-    // Added 'group' class here to trigger child hover effects
+   
     <article className="group flex flex-col gap-2 bg-white w-full">
       
-      {/* Image Container: Added 'relative' and 'overflow-hidden' */}
+
       <div className="relative aspect-[4/5] bg-gray-100 overflow-hidden rounded-lg">
         <Image
           src={imageSrc}
           alt={title}
-          fill // Using 'fill' is better for responsive cards
+          fill 
           className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
           quality={100}
         />
 
-        {/* Hover icons: Changed colors to Primary Teal (#07B4B0) */}
+
         <div className="absolute right-3 top-3 flex flex-col gap-3 opacity-0 translate-x-4 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 z-10">
           <button className="w-9 h-9 rounded-full bg-white flex items-center justify-center shadow-md hover:bg-[#07B4B0] hover:text-white text-primary transition-colors">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
@@ -57,12 +57,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
       {/* Action Buttons */}
       <div className="flex gap-2 mt-2 w-full">
-        {/* Add To Cart - Matching the lighter teal style from your image */}
+
         <button className="flex-1 flex items-center justify-center gap-2 py-3 rounded bg-[#07B4B0] bg-opacity-10 hover:bg-opacity-20 transition-all">
           <span className="text-sm font-bold text-white">Add To Cart</span>
         </button>
 
-        {/* Buy Now - Solid Teal */}
+  
         <button className="flex-1 py-3 bg-[#07B4B0] hover:bg-[#06a39f] rounded text-white text-sm font-bold transition">
           Buy Now
         </button>
