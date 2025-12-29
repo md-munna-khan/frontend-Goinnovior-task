@@ -18,7 +18,7 @@ export const NavMenu = (props: NavigationMenuProps) => {
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
     { href: "/our-services", label: "Our Services" },
-    { href: "/our-products", label: "Our Products" },
+    { href: "/admin/products", label: "Our Products" },
     { href: "/blogs", label: "Blogs" },
   
   ];

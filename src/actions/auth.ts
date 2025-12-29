@@ -14,5 +14,3 @@ export const register= async (data:FieldValues)=>{
     }
     return await res.json()
 }
-
-
