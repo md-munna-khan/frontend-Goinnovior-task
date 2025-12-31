@@ -26,7 +26,8 @@ import {
 } from "lucide-react";
 
 const Navbar = () => {
-  const { user, logout } = useAuth();
+  const { user, logout } =  useAuth();
+  console.log(user)
   const [isProfileOpen, setIsProfileOpen] = useState(false);
 
   return (
@@ -94,7 +95,7 @@ const Navbar = () => {
                   <div className="relative w-8 h-8 sm:w-9 sm:h-9">
                     {user.photoUrl ? (
                       <Image
-                        src={user.photoUrl}
+                        src={user.photoUrl }
                         alt={user.name || "User"}
                         fill
                         className="rounded-full object-cover"

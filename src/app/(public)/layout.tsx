@@ -17,7 +17,7 @@ export default function PublicLayout({
     <>
    <Navbar />
       <main className="min-h-dvh">{children}</main>
-    {/* <Footer/> */}
+    <Footer/>
     </>
   );
 }

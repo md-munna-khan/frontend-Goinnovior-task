@@ -63,7 +63,7 @@ export default function LoginForm() {
         id: user.id ?? user._id,
         name: user.name ?? user.fullName ?? null,
         email: user.email ?? null,
-        photoUrl: user.photoUrl ?? user.avatar ?? null,
+        photoUrl: user.photoUrl ?? user.picture ?? null,
       };
 
       setUser(normalized as any);

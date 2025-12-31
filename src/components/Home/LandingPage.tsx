@@ -10,7 +10,7 @@ import ProductShowcase from "./ProductShowcase";
 
 import FeatureCard from "./FeatureCard";
 import ContactInfo from "./ContactInfo";
-import Footer from "./Footer";
+
 
 const LandingPage: React.FC = () => {
   return (
@@ -41,7 +41,7 @@ const LandingPage: React.FC = () => {
       <CustomProjectSection />
       <ProcessSection />
       <ProductShowcase />
-      <Footer />
+ 
       
     </main>
   );

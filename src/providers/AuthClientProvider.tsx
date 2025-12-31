@@ -65,7 +65,7 @@ export const AuthProviderClient = ({
             id: safe("id") ?? safe("_id") ?? "",
             name: safe("name") ?? safe("fullName") ?? null,
             email: safe("email") ?? null,
-           photoUrl: safe(" photoUrl") ?? safe("image") ?? safe("avatar") ?? null,
+           photoUrl: safe(" photoUrl") ?? safe("picture") ?? safe("avatar") ?? null,
           };
           setUser(normalized);
         }
@@ -97,7 +97,7 @@ export const AuthProviderClient = ({
 };
 
 export const useAuth = () => {
-  const ctx = useContext(AuthContext);
+  const ctx =  useContext(AuthContext);
   if (!ctx) {
     throw new Error("useAuth must be used within AuthProviderClient");
   }
